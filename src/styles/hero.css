@@ -12,7 +12,7 @@ section {
     justify-content: center;
     background-color: #0F1538;
     padding-bottom: 130px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .hero img {
@@ -28,7 +28,7 @@ section {
     align-items: flex-start;
     justify-content: space-around;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .headline h1 {
