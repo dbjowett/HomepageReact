@@ -5,13 +5,11 @@ export default function About() {
   return (
     <div>
       <div className='aboutContainer'>
-        <div className='aboutSection'>
-          <div>
-            <h1>About Me</h1>
-            <span className='line'></span>
-          </div>
+        <div className='infoSection'>
+          <h1>About Me</h1>
+          <span className='line'></span>
           <div>Originally from Canada but living in Seoul, I am a web developer with a passion for design. I love to create beautiful designs using the latest trends. I am also highly motivated to continue to grow and learn in the web development field.</div>
-          <button className='copyEmail' data-clipboard-text='dbjowett@gmail.com'>
+          <button className='copyEmailBtn' data-clipboard-text='dbjowett@gmail.com'>
             Copy Email
           </button>
         </div>

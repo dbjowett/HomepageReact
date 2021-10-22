@@ -44,6 +44,11 @@ nav {
     transform: translateY(-10px);
     transition: all 0.4s ease;
 }
+.contact button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
 .contact a {
     color: black;
     text-decoration: none;
