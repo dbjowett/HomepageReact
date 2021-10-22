@@ -25,7 +25,8 @@ export default function Projects() {
           <img src={require('../images/VGAPI.PNG').default} alt='' className='projectImg' />
           <div className='projectContent'>
             <h4>Video Games</h4>
-            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque totam vel exercitationem aspernatur sapiente aperiam, quo adipisci animi repellat libero.</div>
+
+            <div>A video game site that allows you to search for your favourite old classics or search for the new upcoming releases.</div>
             <div className='siteBtnContainer'>
               <button>
                 <a target='_blank' href='https://vgfullstack.herokuapp.com/games'>
@@ -46,7 +47,7 @@ export default function Projects() {
           <img src={require('../images/KoreanCounters.PNG').default} alt='' class='projectImg' />
           <div className='projectContent'>
             <h4>Korean Counters</h4>
-            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque totam vel exercitationem aspernatur sapiente aperiam, quo adipisci animi repellat libero.</div>
+            <div>A fun Korean counter game that plays 10 rounds to match a provided word with the correct Korean counter you would need for that word.</div>
             <div className='siteBtnContainer'>
               <button>
                 <a target='_blank' href='https://koreancounters.netlify.app'>
@@ -67,7 +68,7 @@ export default function Projects() {
           <img src={require('../images/Homepage.PNG').default} alt='' class='projectImg' />
           <div class='projectContent'>
             <h4>Personal Site</h4>
-            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque totam vel exercitationem aspernatur sapiente aperiam, quo adipisci animi repellat libero.</div>
+            <div>My personal website, custom built to display my projects and what I am currently working on. </div>
             <div className='siteBtnContainer'>
               <button>
                 <a target='_blank' href='#nav'>
