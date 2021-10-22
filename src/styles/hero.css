@@ -32,7 +32,7 @@ section {
 .headline h1 {
     font-size: 50px;
     font-weight: 600;
-    min-width: 374px;
+    min-width: 304px;
     color: white;
     padding-bottom: 50px;
 }
@@ -51,8 +51,8 @@ section {
 }
 
 .button-red {
-    min-width: 140px;
-    height: 50px;
+    min-width: 135px;
+    height: 45px;
     font-size: 1.1rem;
     padding: 5px 15px;
     background-color: #F20000;
@@ -64,8 +64,8 @@ section {
 
 .button-blue {
     margin: 0px 0px 0px 30px;
-    min-width: 140px;
-    height: 50px;
+    min-width: 135px;
+    height: 45px;
     font-size: 1.1rem;
     padding: 5px 15px;
     background-color: #1E275C;
@@ -105,7 +105,7 @@ section {
     }
 }
 
-@media (max-width: 450px) { 
+@media (max-width: 530px) { 
     .hero img{ 
         max-width: 90vw;
         height: 90vw;

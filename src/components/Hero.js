@@ -2,15 +2,6 @@ import React from 'react';
 import '../styles/hero.css';
 
 export default function Hero() {
-  // var clipboard = new ClipboardJS('.copyEmail');
-
-  // clipboard.on('success', (e) => {
-  //   e.trigger.innerHTML = 'Copied!';
-  //   setTimeout(() => {
-  //     e.trigger.innerHTML = 'Copy Email';
-  //   }, 1000);
-  //   e.clearSelection();
-  // });
   return (
     <div>
       <section>
@@ -19,7 +10,9 @@ export default function Hero() {
             <h1>Hi, I am Daniel</h1>
             <div>I am a web developer and designer from Canada living in Korea with experience with React, Express, and Graphic Design.</div>
             <div className='hero-buttons'>
-              <button className='button-red'>Projects</button>
+              <button className='button-red' href='#projects'>
+                <a href='#projects'>Projects</a>
+              </button>
               <button className='button-blue'>Contact me</button>
             </div>
           </div>

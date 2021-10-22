@@ -15,8 +15,10 @@ export default function Projects() {
         </svg>
       </div>
       <div className='projects' id='projects'>
-        <h1>Projects</h1>
-        <span className='line'></span>
+        <div className='projectsTitle'>
+          <h1>Projects</h1>
+          <span className='line'></span>
+        </div>
 
         {/* Project 1 */}
         <div className='project project1'>
@@ -24,11 +26,18 @@ export default function Projects() {
           <div className='projectContent'>
             <h4>Video Games</h4>
             <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque totam vel exercitationem aspernatur sapiente aperiam, quo adipisci animi repellat libero.</div>
-            <button>
-              <a href='https://github.com/dbjowett/VideoGameFullStack'>
-                see on github <i class='fas fa-bolt'></i>
-              </a>
-            </button>
+            <div className='siteBtnContainer'>
+              <button>
+                <a target='_blank' href='https://vgfullstack.herokuapp.com/games'>
+                  see live <i class='fas fa-bolt'></i>
+                </a>
+              </button>
+              <button>
+                <a target='_blank' href='https://github.com/dbjowett/VideoGameFullStack'>
+                  on github <i class='fab fa-github'></i>
+                </a>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -38,11 +47,18 @@ export default function Projects() {
           <div className='projectContent'>
             <h4>Korean Counters</h4>
             <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque totam vel exercitationem aspernatur sapiente aperiam, quo adipisci animi repellat libero.</div>
-            <button>
-              <a href='https://github.com/dbjowett/koreanCounters'>
-                see on github <i class='fas fa-bolt'></i>
-              </a>
-            </button>
+            <div className='siteBtnContainer'>
+              <button>
+                <a target='_blank' href='https://koreancounters.netlify.app'>
+                  see live <i class='fas fa-bolt'></i>
+                </a>
+              </button>
+              <button>
+                <a target='_blank' href='https://github.com/dbjowett/koreanCounters'>
+                  on github <i class='fab fa-github'></i>
+                </a>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -52,11 +68,18 @@ export default function Projects() {
           <div class='projectContent'>
             <h4>Personal Site</h4>
             <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque totam vel exercitationem aspernatur sapiente aperiam, quo adipisci animi repellat libero.</div>
-            <button>
-              <a href='https://github.com/dbjowett/HomePage'>
-                see on github <i class='fas fa-bolt'></i>
-              </a>
-            </button>
+            <div className='siteBtnContainer'>
+              <button>
+                <a target='_blank' href='#nav'>
+                  see live <i class='fas fa-bolt'></i>
+                </a>
+              </button>
+              <button>
+                <a target='_blank' href='https://github.com/dbjowett/HomepageReact'>
+                  on github <i class='fab fa-github'></i>
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </div>

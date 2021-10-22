@@ -1,7 +1,18 @@
 import React from 'react';
 import '../styles/about.css';
+import ClipboardJS from 'clipboard';
 
 export default function About() {
+  var clipboard = new ClipboardJS('.copyEmailBtn');
+
+  clipboard.on('success', (e) => {
+    e.trigger.innerHTML = 'Copied!';
+    setTimeout(() => {
+      e.trigger.innerHTML = 'Copy Email';
+    }, 1000);
+    e.clearSelection();
+  });
+
   return (
     <div>
       <div className='aboutContainer'>

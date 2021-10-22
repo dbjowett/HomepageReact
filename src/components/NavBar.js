@@ -3,11 +3,13 @@ import '../styles/navBar.css';
 
 export default function NavBar() {
   return (
-    <nav>
+    <nav id='nav'>
       <ul className='navlist'>
-        <h5>Daniel Jowett</h5>
+        {/* <h5>Daniel Jowett</h5> */}
         <li>
-          <a href='https://github.com/dbjowett'>github</a>
+          <a target='_blank' href='https://github.com/dbjowett'>
+            github
+          </a>
         </li>
         <li>
           <a href='#projects'>projects</a>
