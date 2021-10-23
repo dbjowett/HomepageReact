@@ -1,0 +1,38 @@
+.contactForm {
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow:
+        0px 0px 23.9px rgba(0, 0, 0, 0.053),
+        0px 0px 68.9px rgba(0, 0, 0, 0.077),
+        0px 0px 190px rgba(0, 0, 0, 0.13);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    position: relative;
+}
+.contactHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg {
+    position: absolute;
+    top: -200px;
+    left: 40px;
+    z-index: -1;
+}
+
+.line {
+    border: 1px solid rgb(170, 170, 170);
+}
+.contactHeader i {
+    padding-left: 15px;
+    font-size: 1.8rem;
+}
+
+.FormControl {
+    padding-top: 20px;
+    border: 1px solid red;
+}

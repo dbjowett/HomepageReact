@@ -71,7 +71,7 @@ export default function Projects() {
             <div>My personal website, custom built to display my projects and what I am currently working on. </div>
             <div className='siteBtnContainer'>
               <button>
-                <a target='_blank' href='#nav'>
+                <a href='#nav'>
                   see live <i class='fas fa-bolt'></i>
                 </a>
               </button>

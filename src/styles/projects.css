@@ -90,16 +90,6 @@
 /* Media Queries */
 
 @media only screen and (max-width: 950px) {
-   
-  .aboutContainer {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .photoSection {
-      margin-bottom: 280px;
-      margin-right: 100px;
-  }
   .projectContent h4 {
       font-size: 1.5rem;
   }
