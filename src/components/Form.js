@@ -4,7 +4,7 @@ import '../styles/form.css';
 
 export default function Form() {
   return (
-    <div style={{ paddingTop: '500px', paddingBottom: '500px', margin: 'auto', width: '50%' }}>
+    <div style={{ paddingTop: '300px', paddingBottom: '500px', margin: 'auto', width: '90%', maxWidth: '550px' }}>
       <form className='contactForm' action=''>
         <div className='contactHeader'>
           <h1>Contact Me</h1>
