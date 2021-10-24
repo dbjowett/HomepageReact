@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, FormControl, InputLabel, Input, FormHelperText, TextField } from '@mui/material';
+import { Button, FormControl, InputLabel, Input, TextField } from '@mui/material';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import '../styles/form.css';
@@ -21,11 +21,11 @@ export default function Form() {
   };
 
   return (
-    <div className='formContainer'>
+    <div className='formContainer' id='contact'>
       <form className='contactForm' action='' onSubmit={handleSubmit((data) => formSubmit(data))}>
         <div className='contactHeader'>
           <h1>Contact Me</h1>
-          <i class='far fa-id-card'></i>
+          <i className='far fa-id-card'></i>
         </div>
         <svg id='visual' viewBox='0 0 645 600' width='540' height='500' xmlns='http://www.w3.org/2000/svg' version='1.1'>
           <rect x='0' y='0' width='0' height='100' fill='#ffffff'></rect>
@@ -38,14 +38,14 @@ export default function Form() {
 
         <FormControl variant='filled'>
           <InputLabel htmlFor='email-input'>Email address</InputLabel>
-          <Input {...register('email')} required id='email-input' aria-describedby='my-helper-text' />
+          <Input {...register('email')} type='email' required id='email-input' />
         </FormControl>
         <FormControl>
           <InputLabel htmlFor='name-input'>Name</InputLabel>
-          <Input {...register('name')} required id='email-input' aria-describedby='my-helper-text' />
+          <Input {...register('name')} required id='email-input' />
         </FormControl>
         <FormControl>
-          <TextField {...register('message')} id='textfield' label='Message' variant='outlined' multiline minRows='4' />
+          <TextField {...register('message')} required id='textfield' label='Message' variant='outlined' multiline minRows='4' />
         </FormControl>
         <Button type='submit' variant='contained' size='large'>
           Send
