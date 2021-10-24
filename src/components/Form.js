@@ -1,11 +1,28 @@
 import React from 'react';
 import { Button, FormControl, InputLabel, Input, FormHelperText, TextField } from '@mui/material';
+import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
 import '../styles/form.css';
 
 export default function Form() {
+  const { register, handleSubmit } = useForm();
+
+  const formSubmit = (data) => {
+    let templateParams = {
+      email: data.email,
+      from_name: data.name,
+      message: data.message
+    };
+
+    emailjs.send('service_80k1rge', 'template_vgjw1uj', templateParams, process.env.REACT_APP_EMAILJS_KEY).then(
+      (res) => console.log(res.text),
+      (err) => console.log(err.text)
+    );
+  };
+
   return (
-    <div style={{ paddingTop: '300px', paddingBottom: '500px', margin: 'auto', width: '90%', maxWidth: '550px' }}>
-      <form className='contactForm' action=''>
+    <div className='formContainer'>
+      <form className='contactForm' action='' onSubmit={handleSubmit((data) => formSubmit(data))}>
         <div className='contactHeader'>
           <h1>Contact Me</h1>
           <i class='far fa-id-card'></i>
@@ -18,21 +35,19 @@ export default function Form() {
               fill='#0F1538'></path>
           </g>
         </svg>
-        {/* <span className='line'></span> */}
 
         <FormControl variant='filled'>
-          <InputLabel htmlFor='my-input'>Email address</InputLabel>
-          <Input required id='my-input' aria-describedby='my-helper-text' />
+          <InputLabel htmlFor='email-input'>Email address</InputLabel>
+          <Input {...register('email')} required id='email-input' aria-describedby='my-helper-text' />
         </FormControl>
         <FormControl>
-          <InputLabel htmlFor='my-input'>Name</InputLabel>
-          <Input id='my-input' aria-describedby='my-helper-text' />
+          <InputLabel htmlFor='name-input'>Name</InputLabel>
+          <Input {...register('name')} required id='email-input' aria-describedby='my-helper-text' />
         </FormControl>
         <FormControl>
-          <TextField id='textfield' label='Message' multiline variant='outlined' minRows='4' />
+          <TextField {...register('message')} id='textfield' label='Message' variant='outlined' multiline minRows='4' />
         </FormControl>
-
-        <Button variant='contained' size='large'>
+        <Button type='submit' variant='contained' size='large'>
           Send
         </Button>
       </form>
