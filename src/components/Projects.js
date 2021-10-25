@@ -29,7 +29,7 @@ export default function Projects() {
             <div>A video game site that allows you to search for your favourite old classics or search for the new upcoming releases.</div>
             <div className='siteBtnContainer'>
               <button>
-                <a target='_blank' rel='noopener noreferrer' href='https://vgfullstack.herokuapp.com/games'>
+                <a target='_blank' rel='noopener noreferrer' href='https://vgfullstack.herokuapp.com/'>
                   see live <i className='fas fa-bolt'></i>
                 </a>
               </button>
