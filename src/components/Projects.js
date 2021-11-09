@@ -22,7 +22,7 @@ export default function Projects() {
 
         {/* Project 1 */}
         <div className='project project1'>
-          <img src={require('../images/VGAPI.PNG').default} alt='' className='projectImg' />
+          <img src={require('../images/VGAPI.PNG')} alt='' className='projectImg' />
           <div className='projectContent'>
             <h4>Video Games</h4>
 
@@ -44,7 +44,7 @@ export default function Projects() {
 
         {/* Project 2 */}
         <div className='project project2'>
-          <img src={require('../images/KoreanCounters.PNG').default} alt='' className='projectImg' />
+          <img src={require('../images/KoreanCounters.PNG')} alt='' className='projectImg' />
           <div className='projectContent'>
             <h4>Korean Counters</h4>
             <div>A fun Korean counter game that plays 10 rounds to match a provided word with the correct Korean counter you would need for that word.</div>
@@ -65,7 +65,7 @@ export default function Projects() {
 
         {/* Project 3 */}
         <div className='project project3'>
-          <img src={require('../images/Homepage.PNG').default} alt='' className='projectImg' />
+          <img src={require('../images/Homepage.PNG')} alt='' className='projectImg' />
           <div className='projectContent'>
             <h4>Personal Site</h4>
             <div>My personal website, custom built to display my projects and what I am currently working on. </div>

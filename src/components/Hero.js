@@ -13,10 +13,12 @@ export default function Hero() {
               <button className='button-red' href='#projects'>
                 <a href='#projects'>Projects</a>
               </button>
-              <button className='button-blue'>Contact me</button>
+              <button className='button-blue'>
+                <a href='#contact'>Contact me</a>{' '}
+              </button>
             </div>
           </div>
-          <img src={require('../images/scotland.jpg').default} alt='scotland church' />
+          <img src={require('../images/scotland.jpg')} alt='scotland church' />
         </div>
       </section>
       <div className='custom-shape-divider-bottom-1629420053'>

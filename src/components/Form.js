@@ -1,19 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, FormControl, InputLabel, Input, TextField } from '@mui/material';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
+import Modal from './Modal';
+import Backdrop from './Backdrop';
 import '../styles/form.css';
 
 export default function Form() {
   const { register, handleSubmit } = useForm();
+  const [showModal, toggleModal] = useState(false);
+
+  //Modal Handlers
+  function deleteHandler() {
+    toggleModal(true);
+  }
+  function closeModalHandler() {
+    toggleModal(false);
+  }
 
   const formSubmit = (data) => {
+    deleteHandler();
     let templateParams = {
       email: data.email,
       from_name: data.name,
       message: data.message
     };
 
+    // For sending an email when Form is submitted
     emailjs.send('service_80k1rge', 'template_vgjw1uj', templateParams, process.env.REACT_APP_EMAILJS_KEY).then(
       (res) => console.log(res.text),
       (err) => console.log(err.text)
@@ -35,7 +48,6 @@ export default function Form() {
               fill='#0F1538'></path>
           </g>
         </svg>
-
         <FormControl variant='filled'>
           <InputLabel htmlFor='email-input'>Email address</InputLabel>
           <Input {...register('email')} type='email' required id='email-input' />
@@ -51,6 +63,8 @@ export default function Form() {
           Send
         </Button>
       </form>
+      {showModal && <Modal onClick={closeModalHandler} />}
+      {showModal && <Backdrop onClick={closeModalHandler} />}
     </div>
   );
 }

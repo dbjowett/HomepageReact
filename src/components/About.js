@@ -3,6 +3,7 @@ import '../styles/about.css';
 import ClipboardJS from 'clipboard';
 
 export default function About() {
+  // Copys email to users clipboard
   var clipboard = new ClipboardJS('.copyEmailBtn');
 
   clipboard.on('success', (e) => {
@@ -25,7 +26,7 @@ export default function About() {
           </button>
         </div>
         <div className='photoSection'>
-          <img src={require('../images/Passport_L.jpg').default} alt='Portfolio' />
+          <img src={require('../images/Passport_L.jpg')} alt='Portfolio' />
           <svg id='visual' viewBox='0 0 645 600' width='540' height='500' xmlns='http://www.w3.org/2000/svg' version='1.1'>
             <rect x='0' y='0' width='0' height='600' fill='#ffffff'></rect>
             <g transform='translate(391.2271740935551 270.99777235862325)'>
