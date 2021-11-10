@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, FormControl, InputLabel, Input, TextField } from '@mui/material';
+import { FormControl, InputLabel, Input, TextField } from '@mui/material';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import Modal from './Modal';
@@ -15,6 +15,7 @@ export default function Form() {
     toggleModal(true);
   }
   function closeModalHandler() {
+    // clearInputs();
     toggleModal(false);
   }
 
@@ -59,9 +60,9 @@ export default function Form() {
         <FormControl>
           <TextField {...register('message')} required id='textfield' label='Message' variant='outlined' multiline minRows='4' />
         </FormControl>
-        <Button type='submit' variant='contained' size='large'>
+        <button className='formButton' type='submit'>
           Send
-        </Button>
+        </button>
       </form>
       {showModal && <Modal onClick={closeModalHandler} />}
       {showModal && <Backdrop onClick={closeModalHandler} />}
