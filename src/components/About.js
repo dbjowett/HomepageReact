@@ -20,7 +20,10 @@ export default function About() {
         <div className='infoSection'>
           <h1>About Me</h1>
           <span className='line'></span>
-          <div>Originally from Canada but living in Seoul, I am a web developer with a passion for design. I love to create beautiful designs using the latest trends. I am also highly motivated to continue to grow and learn in the web development field.</div>
+          <div>
+            Originally from Canada but living in Seoul, I am a web developer with a passion for design. I love to create beautiful designs
+            using the latest trends. I am also highly motivated to continue to grow and learn in the web development field.
+          </div>
           <button className='copyEmailBtn' data-clipboard-text='dbjowett@gmail.com'>
             Copy Email
           </button>
