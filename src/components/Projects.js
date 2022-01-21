@@ -79,8 +79,13 @@ export default function Projects() {
             </div>
             <div className='siteBtnContainer'>
               <button>
+                <a target='_blank' rel='noopener noreferrer' href='https://nextjs-movies-theta.vercel.app/popular'>
+                  see live <i className='fas fa-bolt'></i>
+                </a>
+              </button>
+              <button>
                 <a target='_blank' rel='noopener noreferrer' href='https://github.com/dbjowett/Nextjs_Movies'>
-                  see on github <i className='fab fa-github'></i>
+                  on github <i className='fab fa-github'></i>
                 </a>
               </button>
             </div>
